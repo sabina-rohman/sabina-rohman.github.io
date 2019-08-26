@@ -1,6 +1,7 @@
 var hiddenWord = pickRandomNumber();
 var totalHearts = 0;
 var heartsLeft;
+alert(hiddenWord);
 
 
 $( document ).ready(function() {
@@ -47,16 +48,17 @@ $("#userInput").on("keypress", function(event){
 			var textInput = $("#userInput").val();
 			$("#previousTries").prepend("<div><span class='historyCow'>" + cowCount +"</span><span class='historyValue'>" + textInput + "</span><span class='historyBull'>"+ bullCount + "</span></div>");
 			$(this).val("");
+			// step7: Decrease the heart counter by 1
+			heartsLeft -= 1;
+			// step8: Update the no of trial in the html
+			$("#heart-" + String(heartsLeft)).replaceWith('<i class="far fa-heart"></i>');
+
+			if(heartsLeft === 0){
+				showLooserDialog();
+			}
 		}
 		
-		// step7: Decrease the heart counter by 1
-		heartsLeft -= 1;
-		// step8: Update the no of trial in the html
-		$("#heart-" + String(heartsLeft)).replaceWith('<i class="far fa-heart"></i>');
-
-		if(heartsLeft === 0){
-			showLooserDialog();
-		}
+		
 
 	}	
 });
