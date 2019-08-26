@@ -1,7 +1,6 @@
 var hiddenWord = pickRandomNumber();
 var totalHearts = 0;
 var heartsLeft;
-alert(hiddenWord);
 
 
 $( document ).ready(function() {
