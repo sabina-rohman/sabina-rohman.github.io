@@ -1,0 +1,194 @@
+body{
+	font-family: Montserrat;
+}
+
+.jumbotron {
+  background: #00b09b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.welcomeBtn{
+	width:120px;
+	font-size: 10px;
+}
+
+#welcomeModalHeader {
+   background: #005AA7;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.instructionNumber{
+	border:1px solid blue;
+	padding:2px;
+	font-size: 20px;
+	font-weight:bold;
+}
+
+.cowNumber{
+	color:green;
+}
+
+.bullNumber{
+	color:red;
+}
+
+ .modal-body{
+	font-family:Fjalla One; 
+	line-height: 300%;
+	text-align: center;
+}
+.lead{
+	color:white;
+}
+h1{
+	text-align: center; 
+	color:white;
+	font-weight: bold;
+	font-size: 200px;
+	text-transform: uppercase;
+	font-family: Righteous;
+}
+#hearts{
+	color:red;
+	font-size:30px;
+}
+
+#header{
+	text-align: right;
+	font-size:30px;
+}
+
+
+#hearts > i {
+	margin-right: 10px;
+}
+
+#userInput{
+	margin-top:50px;
+	font-size:100px;
+	height:200px;
+	font-size:120px;
+	letter-spacing:0.9rem;
+	width:370px;
+	padding: 20px;
+}
+
+#form{
+	width:30%;
+	margin:20px auto;
+}
+
+
+.cow{
+	font-size:200px;
+	color:green;
+}
+
+.bull{
+	font-size:200px;
+	color:red;
+}
+
+#count{
+	margin-top: 100px;
+	text-align: center;
+}
+
+
+#restartBtn{
+	margin-left: 10px;
+}
+
+#restartBtn:hover {
+	cursor: pointer;
+	font-size: 35px;
+	/*We are increasing the font-size from 30px to 35px so we are reducing the margin from 10px to 5px.
+	This makes sure that the heart won't flicker*/
+	margin-left: 5px;
+}
+
+.historyCow{
+	color:green;
+	font-size:20px;
+	padding-right: 20px;
+}
+
+.historyBull{
+	color:red;
+	font-size:20px;
+	padding-left: 20px;
+}
+
+.historyValue{
+	font-size:30px;
+}
+
+#resultText{
+	font-size: 20px;
+	color:green;
+	text-align: center;
+}
+
+@media (max-width: 576px) {
+	#container{
+		width:90%;
+	}
+	
+
+	#userInput{
+		height:100px;
+		font-size:60px;
+		width:200px;
+		padding: 10px;
+	}
+
+	.cow{
+		font-size:50px;
+	}
+
+	.bull{
+		font-size:50px;
+	}
+
+	.animalPic{
+		width:70%;
+	  	height: auto;
+	}
+
+	.modal-body{
+		font-size: 12px;
+	}
+
+}
+
+@media (min-width: 576px) and (max-width: 991.98px)  { 
+
+	.animalPic{
+		width:80%;
+	  	height: auto;
+	}
+
+	.cow{
+		font-size:60px;
+	}
+
+	.bull{
+		font-size:60px;
+	}
+
+	#userInput{
+		height:120px;
+		font-size:80px;
+		width:230px;
+		padding: 10px;
+	}
+
+	.modal-body{
+		font-size: 12px;
+	}
+ }
+
+ 

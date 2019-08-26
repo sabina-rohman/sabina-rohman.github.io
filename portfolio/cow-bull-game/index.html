@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cow Bull Game</title>
+		<link rel="stylesheet" type="text/css" href="cow_bull.css">
+		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+		<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	</head>
+	<body>
+		<div class="jumbotron">
+			<h1>Cow Bull Game</h1>
+			<p class="lead text-center "><i class="fas fa-paw mr-4"></i>Play this fun Moo Game! </p>
+		</div>
+		
+		<div class="container">
+			<div id="header">
+				<span id="hearts"></span>
+				<i id="restartBtn" class="fas fa-redo-alt"></i>
+			</div>
+			<div id="form" align="center">
+				<input
+				id="userInput"
+				type="text"
+				placeholder="0000"
+				maxlength="4">
+			</div>
+		</div>
+		
+		
+		<div class="row mt-5">
+			<div class="col-3" align="right">
+				<img class="animalPic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlcca_XflfG1Ppfs9U3ZzCBVjTfjhkvKVgEbawwamyrBelW_Gu">
+			</div>
+			<div class="col-1" align="left">
+				<p><span  class="ml-3" id="cowDisplay"></span></p>
+			</div>
+			<div class="col-4" align="center">
+				<div id="previousTries">
+					
+				</div>
+				
+			</div>
+			<div class="col-1" align="right">
+				<p><span  class="ml-3" id="bullDisplay"></span></p>
+			</div>
+			<div class="col-3" align="left">
+				<img class="animalPic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrHi2dtFhLgXvBs6o_DNe3lZqSzdb69Vx-rw4z7jDsBzvoLkRF">
+			</div>
+			
+		</div>
+		
+		<!-- RESULT DIALOG -->
+		<div class="modal fade" id="resultModal" role="dialog">
+			<div class="modal-dialog modal-md" role="document">
+				<div class="modal-content">
+					
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h4 class="modal-title" id="resultText"></h4>
+					</div>
+					
+					<!-- Modal body -->
+					<div  class="modal-body">
+						<img id="resultImage" src="">
+					</div>
+					
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" id="tryAgainBtn" class="btn btn-secondary" data-dismiss="modal">Play Again</button>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- WELCOME DIALOG -->
+		<div class="modal" id="welcomeModal">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					
+					<!-- Modal Header -->
+					<div class="modal-header" id="welcomeModalHeader">
+						<h4 class="modal-title">Cow Bull Game</h4>
+					</div>
+					
+					<!-- Modal body -->
+					<div class="modal-body">
+						<h4>Instructions: </h4>
+						<ul style="list-style-type:none;">
+							<li>Guess the 4-digit number. Eg: <span class="instructionNumber">9436</span></li>
+							<li>You earn a cow point for every correct digit and position. Eg:<span class="instructionNumber">2<span class="cowNumber">4</span>1<span class="cowNumber">6</span></span> = 2 Cows</li>
+							<li>You earn a bull point for every correct digit but wrong position. Eg: <span class="instructionNumber"><span class="bullNumber">4</span>2<span class="bullNumber">6</span>1</span> = 2 bulls</li>
+							<li>
+								Or say, you entered:<span class="instructionNumber">1<span class="cowNumber">43</span><span class="bullNumber">9</span></span> = 2 Cows & 1 Bull
+							</li>
+							<li>But be careful! You have limited attempts to get it right.<i class="fas fa-heart" style="color:red"></i></li>
+							<li>HAVE FUN!</li>
+						</ul>
+						<div align="center">
+							<button type="button" id="easyBtn" class="btn btn-success welcomeBtn" data-dismiss="modal">Easy</button>
+							<button type="button" id="normalBtn" class="btn btn-primary welcomeBtn" data-dismiss="modal">Normal</button>
+							<button type="button" id="hardBtn" class="btn btn-danger welcomeBtn" data-dismiss="modal">Hard</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="cow_bull.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>
