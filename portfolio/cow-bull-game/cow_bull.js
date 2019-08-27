@@ -138,8 +138,27 @@ $("#restartBtn").on("click",function(){
 	showWecomeDialog();
 });
 
+
 function pickRandomNumber(){
-	var random = Math.floor(Math.random() * (10000 - 1000) + 1000);
-	return String(random);
+	var arrayOfNumbers = ['1', '2', '3', '4', '5', '6','7', '8', '9'];
+
+	var n1 = pickRandomDigit(arrayOfNumbers);
+	var n2 = pickRandomDigit(arrayOfNumbers);
+	var n3 = pickRandomDigit(arrayOfNumbers);
+	var n4 = pickRandomDigit(arrayOfNumbers);
+
+	return n1 + n2 + n3 + n4;
+
 }
 
+
+function pickRandomDigit(arr){
+	// pick a random number from the array
+	var n = arr[Math.floor(Math.random() * arr.length)];
+	// get the index of the picked random number
+	var index = arr.indexOf(n);
+	// remove the picked random number from the array
+	arr.splice(index, 1);
+	// return the random digit
+	return n;
+}
