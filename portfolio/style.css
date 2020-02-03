@@ -90,14 +90,10 @@ p {
   text-align: center;
 }
 
-.pic-with-link {
-  /*width: 40rem;*/
-}
-
 .pic-with-link:hover {
   cursor: pointer;
-  box-shadow: 10px 10px 5px grey;
 }
+
 
 /*Skills*/
 
