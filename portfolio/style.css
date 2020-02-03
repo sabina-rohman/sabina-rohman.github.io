@@ -1,0 +1,191 @@
+#my-pic {
+	width: 300px;
+	border-radius: 50%;
+  margin: auto;
+}
+
+.intro {
+  padding-top: 200px;
+}
+.content{
+  margin-top:100px;
+  margin-bottom:100px
+} 
+
+.blurb p{
+  color:#086380;
+  font-weight:100;
+  font-size:1.5rem;
+  line-height:2;
+  text-orientation: 
+}
+
+.links {
+  font-size: 20px;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+} 
+
+body {
+  font-family: "Nunito Sans"
+  padding: 1em 4em;
+  font-size: 12px;
+  background: #c2e5f0;
+  color: #aaa;
+  position: relative;
+}
+
+/* up arrow for back to top */
+
+/* Scroll to top button */
+#back-to-top {
+  background-color: #3E2F28;
+  color: #EDEAE5;
+  opacity: 0;
+  transition: opacity .6s ease-in-out;
+  z-index: 999;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+a#back-to-top {
+  text-align: center;
+  line-height: 0.5;
+  padding-left: 1px;
+  padding-top: 15px;
+}
+
+#back-to-top i {
+  font-size: 2em;
+}
+#back-to-top.show {
+     opacity: 0.8;
+}
+/* Scroll to top button end */
+
+h1,h2 {
+  font-weight: 200;     
+  margin: 0.4em 0;
+  text-align: center;
+}
+h1 { 
+  font-size: 3.5em; 
+  color: #170202;
+}
+h2 {
+  color: #011b24;
+  font-size:3em;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.pic-with-link {
+  /*width: 40rem;*/
+}
+
+.pic-with-link:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 5px grey;
+}
+
+/*Skills*/
+
+#skills i {
+  font-size: 7rem;
+}
+
+#html5 {
+  color: rgb(234, 98, 39);
+}
+
+#css3 {
+  color: rgb(26, 112, 181);
+}
+
+#js {
+  color: rgb(248, 194, 4);
+}
+
+#bootstrap {
+  color: rgb(97, 63, 145)
+}
+
+#python {
+  color: rgb(51, 153, 255) ;
+}
+
+#nodeJs {
+  color: black;
+}
+
+#npm {
+  color: green;
+}
+
+/*Social-icons*/
+#github-icon {
+  position: fixed;
+  z-index: 3;
+  top: 25vh;
+  right: 5px;
+  font-size: 4em;
+  color: darkslategray;
+}
+
+#linkedin-icon {
+  position: fixed;
+  z-index: 3;
+  top: 35vh;
+  right: 5px;
+  font-size: 4em;
+  color: rgb(68, 87, 144);
+}
+
+#hackerrank-icon {
+  position: fixed;
+  z-index: 3;
+  top: 45vh;
+  right: 5px;
+  font-size: 4em;
+  color: #1fad30;
+}
+
+ /*Navbar*/
+ #mainNavbar{
+  font-size:1.5rem;
+  font-weight:100;
+}
+#mainNavbar .nav-link{
+  color:white;
+}
+#mainNavbar .nav-link:hover{
+  color:#EA1C2C;
+}
+
+#mainNavbar .navbar-brand {
+  color:#EA1C2C;
+  font-size:1.5rem;
+}
+
+/*scroll*/
+.navbar.scrolled{
+  background: #c7c38d;
+  transition: background 1s;
+}
+@media(max-width:1200px){
+  #headingGroup h1{
+    font-weight:100;
+    font-size:2rem;
+  }
+}
