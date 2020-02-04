@@ -86,11 +86,16 @@ h2 {
   font-size:3em;
 }
 
-p {
-  font-size: 20px;
+.blurb p {
   text-align: center;
+  font-weight: 100;
+  font-size: 1.25rem;
+  line-height: 2
 }
 
+.card-body .card-text {
+  font-size: 20px
+}
 .pic-with-link:hover {
   cursor: pointer;
 }
@@ -185,4 +190,10 @@ p {
     font-weight:100;
     font-size:2rem;
   }
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #332d31;
+  color: white;
 }
